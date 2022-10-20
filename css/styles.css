@@ -41,21 +41,20 @@ nav a:hover{
 
 .skip a{
   background: white;
-  /* left: 0; */
   padding: 6px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
   /*Your code here - position relative to the parent */
+  position: absolute;
   left: -500px;
   top: -40px;
-  position: absolute;
   /*Your code here - place 500px left and 40px higher */;
 }
 
 .skip a:focus{
   background: white;
-  top: 0;
+  top: 20;
   left: 0;
   padding: 6px;
   -webkit-transition: top 1s ease-out;
@@ -69,8 +68,8 @@ nav a:hover{
 /*Add the selector and rule to move the skip
 link to the exact top of the page.*/
 
-*focus{
-  border: solid black 2px;
+*:focus{
+  border: 2px solid black;
 }
 
 /*Your code here*/
@@ -102,12 +101,11 @@ header{
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
   color: white;
-  height: 400px;                /* Parallax effect */
+  min-height: 400px;                /* Parallax effect */
   /* Your code here */
   /* Set background-image to header.jpg in the images folder */
   background-image: url('../images/header.jpg');
-  background-color: #DDDDDD #858585 #707070 #B3B3B3;
-  height: 400px;
+  background-color: #dddddd #858585 #707070 #B3B3B3;
   /* Span one row */
   grid-row: 2 / span 1;
   grid-column: 1 /span all;
@@ -133,9 +131,9 @@ img {
   /* See documentation for mobile view */
 }
 
-.header p {
+/* .header p {
     grid-column: 1/ span all;
-}
+} */
 
 .about, .method, .clients, .contact{
   /*Your code here */
@@ -150,6 +148,7 @@ img {
    grid-column: 1 / span all;
    max-height: 500px;
    overflow: hidden;
+/*     background-color: black; */
    /* See documentation for mobile view */
 }
 
@@ -200,7 +199,7 @@ img {
   .container{
     /*Your code here */
     display: grid;
-    grid-template-columns:50px auto 500px auto 50px;
+    grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
     /* See documentation for desktop view */
   }
