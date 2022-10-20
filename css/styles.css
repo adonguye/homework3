@@ -133,6 +133,10 @@ img {
   /* See documentation for mobile view */
 }
 
+.header p {
+    grid-column: 1/ span all;
+}
+
 .about, .method, .clients, .contact{
   /*Your code here */
   grid-column: 2 / span 1;
