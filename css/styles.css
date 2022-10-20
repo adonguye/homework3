@@ -128,7 +128,7 @@ img {
 .container{
   /*Your code here  */
   display: grid;
-  grid-column: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   row-gap: 30px;
   /* See documentation for mobile view */
 }
