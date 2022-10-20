@@ -181,7 +181,7 @@ img {
   margin: auto;
   /*Your code here:*/
   align-content: center;
-  max-height: 25wh;
+  max-height: 25vh;
   overflow: scroll;
   /*Align the content in the center */
 }
